@@ -1,6 +1,6 @@
 custombucket = "sambhubucket"
 table = "intellipaattab"
-key_id = ""
+key_id = " "
 access_key = ""
 databasehost = "database-1.cs3r6mwhqazo.us-east-1.rds.amazonaws.com"
 duser = "admin"
