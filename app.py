@@ -20,7 +20,7 @@ db_conn = connections.Connection(
 def hello_world():
     if request.method == 'POST':
         # s3 = boto3.resource('s3')
-        s3 = boto3.resource(service_name='s3',region_name='us-east-1',aws_access_key_id='AKIARYWOOGRXGGVNDD6L',aws_secret_access_key='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')
+        s3 = boto3.resource(service_name='s3',region_name='us-east-1',aws_access_key_id=key_id,aws_secret_access_key=access_key)
         file_body = request.files['file_name']
         count_obj = 0
         for i in s3.Bucket(custombucket).objects.all():
