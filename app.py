@@ -29,7 +29,7 @@ def hello_world():
         # print("inside first for")
 
         try:
-            s3.Bucket(custombucket).put_object(Key=file_name, Body=file_body)
+            s3.Bucket(custombucket).put_object(Key=file_name, Body=file_body, ContentType=file_body.content_type)
             # print("after obj upload")
             # bucket_location = boto3.client('s3').get_bucket_location(Bucket=custombucket)
             # # bucket_location = boto3.client('s3').get_bucket_location(Bucket=custombucket)['LocationConstraint']
